@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Http;
+using ProjectGrad_API.DTOs;
+using Microsoft.AspNetCore.Mvc;
+using ProjectGrad_API.Models;
+
+namespace ProjectGrad_API.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthController : ControllerBase
+    {
+        [HttpPost("register")]
+        public IActionResult Register([FromBody] RegisterDto registerDto)
+        {
+            if (string.IsNullOrEmpty(registerDto.Email) || string.IsNullOrEmpty(registerDto.Password))
+            {
+                [cite_start] return BadRequest("Email and Password are required."); [cite: 1311]
+            }
+        }
+
+    }
+}

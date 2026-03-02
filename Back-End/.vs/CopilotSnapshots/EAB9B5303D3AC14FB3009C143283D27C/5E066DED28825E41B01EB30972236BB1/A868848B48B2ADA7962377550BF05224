@@ -1,0 +1,11 @@
+﻿using Microsoft.EntityFrameworkCore;
+using ProjectGrad_API.Models;
+namespace ProjectGrad_API.Data
+{
+    public class ApplicationDbContext : DbContext
+    {
+    }
+    
+    public DbSet<User> Users { get; set; }
+    
+}

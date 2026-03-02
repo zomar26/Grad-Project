@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\migrations\\20260129215419_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\migrations\\20260129215419_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|c:\\users\\omare\\source\\repos\\projectgrad api\\projectgrad api\\projectgrad api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D51C48D9-AE68-42E5-BBE3-8BC43F8F65B7}|ProjectGrad API\\ProjectGrad API.csproj|solutionrelative:projectgrad api\\projectgrad api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260129215419_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Migrations\\20260129215419_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\Migrations\\20260129215419_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Migrations\\20260129215419_InitialCreate.cs",
+              "RelativeToolTip": "ProjectGrad API\\Migrations\\20260129215419_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:54:19.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Program.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\Program.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Program.cs",
+              "RelativeToolTip": "ProjectGrad API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:51:14.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjectGrad API\\appsettings.json",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\appsettings.json",
+              "RelativeToolTip": "ProjectGrad API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-29T21:27:24.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ProjectGrad API\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T21:10:42.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ProjectGrad API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T20:52:57.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\DTOs\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "ProjectGrad API\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T20:51:31.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ProjectGrad API\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\Models\\User.cs",
+              "RelativeToolTip": "ProjectGrad API\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T20:48:13.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectGrad API",
+              "DocumentMoniker": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj",
+              "RelativeDocumentMoniker": "ProjectGrad API\\ProjectGrad API.csproj",
+              "ToolTip": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj*",
+              "RelativeToolTip": "ProjectGrad API\\ProjectGrad API.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-29T20:44:23.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
