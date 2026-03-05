@@ -158,3 +158,5 @@ C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\obj\Debug\net10.0\Pr
 C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\obj\Debug\net10.0\ProjectGrad API.genruntimeconfig.cache
 C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\obj\Debug\net10.0\ref\ProjectGrad API.dll
 C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\bin\Debug\net10.0\BCrypt.Net-Next.dll
+C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\omare\source\repos\ProjectGrad API\ProjectGrad API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
