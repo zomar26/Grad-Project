@@ -1,0 +1,121 @@
+.features-section {
+  width: 100%;
+  padding: 2rem 0 8rem 0; 
+  background-color: #f0fdfd; 
+}
+
+.features-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .features-wrapper { padding: 0 4.5rem; }
+}
+
+/* HEADER - Small title and bold subtext */
+.features-header-container {
+  margin-bottom: 3.5rem;
+}
+
+.features-main-title {
+  font-size: 2rem; /* Reduced size as requested */
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.5px;
+}
+
+.features-sub-text {
+  color: #4b5563;
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold weight for better visibility */
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+/* OUTER CONTAINER - Creates the animated colored border */
+.feature-card-outer {
+  position: relative;
+  padding: 3px; /* Border thickness */
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  background: rgba(0, 128, 128, 0.05); /* Hidden by default */
+}
+
+/* SPINNING GRADIENT FRAME - Active on hover */
+.feature-card-outer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent, 
+    #008080, 
+    #7e22ce, 
+    transparent 40%
+  );
+  animation: spin 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card-outer:hover::before {
+  opacity: 1; /* Lights up on hover */
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* MAIN CARD BODY */
+.feature-card {
+  position: relative;
+  z-index: 1;
+  background-color: white; 
+  border-radius: 30px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-area {
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* GRAY INFO SECTION - Separated from the image */
+.card-body {
+  padding: 2.2rem 1.6rem;
+  background-color: #f9fafb; /* Light Gray background */
+  flex-grow: 1;
+  border-top: 1px solid #f1f5f9;
+}
+
+.card-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.7rem;
+}
+
+.card-description {
+  color: #4b5563;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.6;
+}

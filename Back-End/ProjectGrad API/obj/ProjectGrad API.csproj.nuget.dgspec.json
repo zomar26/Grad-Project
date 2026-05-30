@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj": {}
+    "C:\\Users\\omare\\source\\repos\\Grad-Project\\Back-End\\ProjectGrad API\\ProjectGrad API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj": {
+    "C:\\Users\\omare\\source\\repos\\Grad-Project\\Back-End\\ProjectGrad API\\ProjectGrad API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj",
+        "projectUniqueName": "C:\\Users\\omare\\source\\repos\\Grad-Project\\Back-End\\ProjectGrad API\\ProjectGrad API.csproj",
         "projectName": "ProjectGrad API",
-        "projectPath": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\ProjectGrad API.csproj",
+        "projectPath": "C:\\Users\\omare\\source\\repos\\Grad-Project\\Back-End\\ProjectGrad API\\ProjectGrad API.csproj",
         "packagesPath": "C:\\Users\\omare\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omare\\source\\repos\\ProjectGrad API\\ProjectGrad API\\obj\\",
+        "outputPath": "C:\\Users\\omare\\source\\repos\\Grad-Project\\Back-End\\ProjectGrad API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -44,10 +45,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "BCrypt.Net-Next": {
@@ -98,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200-preview.0.26103.119/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

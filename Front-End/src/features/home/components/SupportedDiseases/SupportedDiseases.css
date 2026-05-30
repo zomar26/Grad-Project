@@ -1,0 +1,121 @@
+/* Main Section Setup */
+.supported-section {
+  background-color: #f0fdfd;
+  padding: 60px 20px 100px 20px;
+  margin-top: -55px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Spacing */
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px; 
+  gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .header-wrapper { flex-direction: row; align-items: flex-end; }
+}
+
+.section-title {
+  font-size: 1.85rem;
+  margin-bottom: 20px; 
+}
+
+.section-subtitle {
+  color: #374151;
+  font-size: 1.05rem; 
+  font-weight: 500;
+  line-height: 1.75; 
+  max-width: 600px; 
+}
+
+/* Grid System */
+.diseases-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 25px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) { .diseases-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+@media (max-width: 640px) { .diseases-grid { grid-template-columns: 1fr !important; } }
+
+/* Card Body & Spacing */
+.disease-card {
+  position: relative;
+  z-index: 1;
+  background-color: #f8fafc;
+  border-radius: 22px;
+  width: 100%;
+  padding: 35px 25px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px; 
+}
+
+.disease-card-title {
+  color: #0b1c24;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 15px; /* Space below title */
+}
+
+.disease-card-desc {
+  color: #374151;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 25px; /* Space before Learn More button */
+}
+
+/* Button Fixes */
+.view-all-btn {
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.learn-more-btn {
+  padding: 10px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.82rem;
+  align-self: center;
+}
+
+/* Spinning Animation stays the same */
+.disease-card-outer {
+  position: relative;
+  padding: 3px; 
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.disease-card-outer::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  background: conic-gradient(transparent, #008080, #7e22ce, transparent 40%);
+  animation: spin 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.disease-card-outer:hover::before { opacity: 1; }
+.disease-card-outer:hover { transform: translateY(-10px); }
+
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

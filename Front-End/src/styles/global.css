@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #004d4d;      
+  --secondary-color: #26a69a;    
+  --light-teal: #eeffff;         
+  --text-dark: #333333;          
+  --text-muted: #666666;        
+  --white: #ffffff;
+  --border-color: #e0e0e0;       
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+}

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* THEME DEFINITION
+   Defining variables globally to prevent yellow syntax warnings in JSX.
+*/
+@theme {
+  --color-brand-teal: #008080;
+}

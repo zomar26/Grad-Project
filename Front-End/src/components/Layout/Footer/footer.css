@@ -1,0 +1,133 @@
+.ft-main {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 50px 20px; /* Reduced side padding for mobile */
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden; /* Ensures no horizontal scroll */
+}
+
+.ft-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ft-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allows items to drop to next line */
+  gap: 20px;
+}
+
+.ft-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Keeps logo and tagline safe on small screens */
+}
+
+.ft-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.ft-vertical-divider {
+  width: 2px;
+  height: 24px;
+  background-color: #4b5563;
+}
+
+.ft-tagline {
+  color: #d1d5db;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.ft-nav-links {
+  display: flex;
+  gap: 25px; /* Slightly reduced gap for better fit */
+  flex-wrap: wrap;
+}
+
+.ft-nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.ft-nav-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.ft-horizontal-line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.ft-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.ft-copyright {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.ft-legal-group {
+  display: flex;
+  gap: 20px;
+}
+
+.ft-legal-group a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+/* --- Responsive Media Queries --- */
+
+@media (max-width: 768px) {
+  .ft-top-content {
+    flex-direction: column; /* Stack logo and nav vertically */
+    align-items: flex-start; /* Align to the left like Figma mobile */
+    gap: 30px;
+  }
+
+  .ft-brand-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ft-vertical-divider {
+    display: none; /* Hide vertical line on mobile to save space */
+  }
+
+  .ft-nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px; /* Narrower gap for mobile links */
+  }
+
+  .ft-bottom-content {
+    flex-direction: column-reverse; /* Put legal links above copyright on mobile */
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+/* --- Main Section Layout --- */
+.vision-mission-section {
+  padding-top: 2rem; 
+  padding-bottom: 5rem;
+  background-color: #e0f7f7;
+  width: 100%;
+}
+
+/* --- Alignment Wrapper --- */
+.vision-mission-wrapper {
+  max-width: 1400px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .vision-mission-wrapper {
+    padding-left: 4.5rem; 
+    padding-right: 4.5rem;
+  }
+}
+
+/* --- Content Block Control --- */
+.content-block {
+  max-width: 550px;
+  width: 100%;
+}
+
+/* --- Mission Vertical Uplift --- */
+@media (min-width: 768px) {
+  .mission-block-uplift {
+    margin-top: -3.5rem; 
+  }
+}
+
+/* --- Typography & Accents --- */
+.custom-heading {
+  display: inline-block;
+  font-size: 1.875rem; 
+  font-weight: 700;
+  color: black;
+  border-bottom: 3.5px solid #008080; 
+  padding-bottom: 0.6rem; 
+  margin-bottom: 0.8rem; 
+}
+
+.description-text {
+  color: #1f2937;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 19px;
+  text-align: left;
+}

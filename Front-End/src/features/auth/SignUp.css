@@ -1,0 +1,258 @@
+.signup-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.welcome-side {
+  flex: 0 0 50%; 
+  background: linear-gradient(180deg, #e0fcfc 0%, #ffffff 100%);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  position: relative;
+  height: 100%;
+}
+
+.back-link {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: none;
+  border: none;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.welcome-content {
+  width: 85%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+}
+
+.main-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #1a1a1a;
+  line-height: 1.1;
+}
+
+.main-title span {
+  background: linear-gradient(90deg, #008080 0%, #4fd1c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.description {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.vr-image {
+  width: 100%;
+  max-width: 290px; 
+  margin: 0 auto;
+  display: block;
+}
+
+.form-side {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.terms-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #004d4d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.divider-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.divider-line { flex: 1; height: 1px; background: #e2e8f0; }
+.divider-text { padding: 0 10px; }
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.login-prompt a { color: #008080; font-weight: 700; text-decoration: none; }
+
+.signup-btn:hover {
+  background-color: #006666; 
+  transform: translateY(-1px); 
+  box-shadow: 0 4px 12px rgba(0, 77, 77, 0.2);
+}
+
+.signup-btn:active {
+  transform: translateY(0); 
+}
+
+.google-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.back-link:hover {
+  color: #1a1a1a;
+  transform: translateX(-3px); 
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
+
+.input-icon-right {
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 5px; 
+}
+
+.input-icon-right:hover {
+  color: #008080;
+}
+
+/* ==========================================================================
+   Responsive & Mobile Design Layout Adjustments
+   ========================================================================== */
+
+/* --- Tablets and Medium Screens (Max Width: 1024px) --- */
+@media screen and (max-width: 1024px) {
+  .main-title {
+    font-size: 36px;
+  }
+  
+  .welcome-content {
+    gap: 30px;
+  }
+  
+  .form-container {
+    max-width: 360px;
+  }
+}
+
+/* --- Mobile Devices and Small Screens (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+  .signup-page-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  /* Stack layout vertically, giving both sides fluid width */
+  .welcome-side, .form-side {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .welcome-side {
+    padding: 60px 20px 40px 20px;
+    height: auto;
+    min-height: 40vh;
+  }
+
+  .back-link {
+    top: 20px;
+    left: 20px;
+  }
+
+  .welcome-content {
+    width: 100%;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  /* Adjust VR image visibility and scale for smaller screen real estate */
+  .vr-image {
+    max-width: 200px;
+    margin-top: 15px;
+  }
+
+  .form-side {
+    padding: 40px 20px;
+  }
+
+  .form-container {
+    max-width: 100%;
+  }
+
+  .form-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}

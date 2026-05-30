@@ -1,0 +1,149 @@
+/* --- Master Detailed View Layout --- */
+.details-view-main {
+  min-height: 100vh;
+  padding: 140px 20px 80px;
+  background: linear-gradient(to bottom, #caefef, #eefcfc, #ffffff);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.details-view-container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* --- Back Link Stylings --- */
+.details-back-anchor {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #008080;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.details-back-anchor:hover {
+  color: #263238;
+  transform: translateX(-4px);
+}
+
+/* --- Medical Card Sheet Architecture --- */
+.medical-profile-card {
+  background: #ffffff;
+  border-radius: 32px;
+  border: 2px solid rgba(0, 196, 196, 0.15);
+  box-shadow: 0 15px 45px rgba(0, 128, 128, 0.04);
+  padding: 45px;
+  box-sizing: border-box;
+}
+
+.profile-header-strip h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.accent-bar-indicator {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #008080, #00c4c4);
+  border-radius: 99px;
+  margin-bottom: 40px;
+}
+
+/* --- Content Information Blocks --- */
+.profile-grid-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.metric-info-block h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #008080;
+  margin: 0 0 10px 0;
+}
+
+.metric-info-block p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Call To Action VR Node --- */
+.profile-action-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.vr-immersion-trigger {
+  background-color: #263238;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 15px rgba(38, 50, 56, 0.2);
+}
+
+.vr-immersion-trigger:hover {
+  background-color: #00c4c4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 196, 196, 0.3);
+}
+
+/* --- Loading Infrastructure States --- */
+.details-loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fcfdfd;
+  gap: 16px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #caefef;
+  border-top-color: #008080;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .medical-profile-card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .profile-header-strip h1 {
+    font-size: 24px;
+  }
+  .vr-immersion-trigger {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}

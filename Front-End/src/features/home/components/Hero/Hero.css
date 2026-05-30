@@ -1,0 +1,166 @@
+.hero-section-wrapper {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0fdfd;
+  padding: 100px 24px 60px 24px;
+  overflow: hidden;
+}
+
+.hero-main-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Stack by default for mobile */
+  gap: 40px;
+  align-items: center;
+}
+
+/* Content Styles */
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  order: 2; /* Text comes second on mobile */
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #000;
+  line-height: 1.2;
+}
+
+.hero-paragraph {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-action-btn {
+  border: 1.5px solid #006666;
+  padding: 10px 28px;
+  background-color: transparent;
+  color: #006666;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 130px;
+}
+
+.hero-action-btn:hover {
+  background-color: #006666;
+  color: #fff;
+}
+
+/* Visual Styles */
+.hero-visual-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1; /* Image comes first on mobile */
+  width: 100%;
+}
+
+.hero-bg-card {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 30px;
+  z-index: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  /* Added smoother transition for background card */
+  transition: transform 0.5s ease; 
+}
+
+/* THE MAGIC: Image Responsive + Hover Animation */
+.hero-img-responsive {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 250px; /* Keep it tight on mobile */
+  object-fit: contain;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+  
+  /* 1. Add transition to the image */
+  transition: transform 0.5s ease, scale 0.5s ease;
+}
+
+/* 2. Defined Hover Actions on image */
+.hero-visual-block:hover .hero-img-responsive {
+  transform: translateY(-10px); /* Moves up 10px smoothly */
+  scale: 1.03; /* Slightly zoom in for effect */
+}
+
+/* 3. Also defined Hover Actions on the card behind for cohesive look */
+.hero-visual-block:hover .hero-bg-card {
+  transform: scale(1.01);
+}
+
+/* --- Responsive Desktop (LG Screens) --- */
+@media (min-width: 1024px) {
+  .hero-main-container {
+    grid-template-columns: 1.2fr 1fr; /* Side by side */
+    gap: 60px;
+  }
+
+  .hero-text-content {
+    text-align: left;
+    order: 1;
+  }
+
+  .hero-paragraph {
+    margin: 0;
+  }
+
+  .hero-btn-group {
+    justify-content: flex-start;
+  }
+
+  .hero-visual-block {
+    order: 2;
+  }
+
+  .hero-title {
+    font-size: 3.75rem;
+  }
+
+  .hero-img-responsive {
+    max-height: none;
+    width: 100%;
+  }
+
+  .hero-bg-card {
+    width: 95%;
+    height: 85%;
+    border-radius: 40px;
+  }
+}
+
+/* --- Tablet Adjustments --- */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-img-responsive {
+    max-height: 350px;
+  }
+}

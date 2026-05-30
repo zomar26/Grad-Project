@@ -1,0 +1,131 @@
+.how-it-works-section {
+  background-color: #e0f7f7 !important;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px !important;
+  overflow: hidden; /* Important to stop horizontal scroll */
+}
+
+.title-container {
+  margin-bottom: 70px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-underline {
+  width: 48px;
+  height: 4px;
+  background-color: #008080 !important;
+  border-radius: 9999px;
+}
+
+/* Layout */
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 250px; /* Ensures cards don't shrink too much */
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  flex-shrink: 0;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 128, 128, 0.4); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 128, 128, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 128, 128, 0); }
+}
+
+.step-circle {
+  width: 85px;
+  height: 85px;
+  background-color: #008080 !important;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+.arrow-container {
+  opacity: 0.6;
+  margin-top: 35px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Text */
+.step-title {
+  color: #0b1c24;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.step-description {
+  color: #4b5563;
+  font-size: 13.5px;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 1024px) {
+  .arrow-container {
+    display: none; /* Remove arrows to prevent horizontal overflow */
+  }
+  .steps-wrapper {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works-section {
+    padding-top: 40px !important;
+    min-height: auto;
+  }
+  .steps-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+  .step-item {
+    width: 100%;
+    min-width: unset;
+    justify-content: center;
+  }
+  .step-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  .title-container {
+    margin-bottom: 40px !important;
+  }
+}

@@ -1,0 +1,135 @@
+/* --- Main Section Background with Gradient --- */
+.diseases-main {
+  padding: 100px 5% 80px; 
+  background: linear-gradient(to bottom, #caefef, #eefcfc, #ffffff);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.diseases-hero h1 {
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 10px; 
+  letter-spacing: -1px;
+}
+
+.diseases-hero p {
+  color: #666;
+  max-width: 650px;
+  margin: 0 auto 40px; 
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+/* --- Disease Card Base Styling --- */
+.disease-card {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(0, 196, 196, 0.08) 40%, rgba(103, 58, 183, 0.08) 100%);
+  padding: 40px 25px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  z-index: 1;
+  /* Placeholder border to prevent layout shifts */
+  border: 2px solid transparent;
+}
+
+/* --- THE ANIMATED SNAKE BORDER (HOVER ONLY) --- */
+.disease-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px; /* Pulls frame slightly outside the card */
+  border-radius: 26px; 
+  padding: 2px; /* Defines border thickness */
+  /* The moving colors: Teal and Purple */
+  background: conic-gradient(from var(--angle), #00c4c4, #673ab7, #00c4c4);
+  
+  /* Masking: Shows the gradient ONLY on the border edge, hides it over the card */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  
+  opacity: 0; /* Hidden in default state */
+  transition: opacity 0.3s ease;
+}
+
+/* Defining the angle property for the CSS animation engine */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* The rotation animation that makes colors "run" around the border */
+@keyframes rotate-angle {
+  to { --angle: 360deg; }
+}
+
+/* --- Hover State Interactions --- */
+.disease-card:hover {
+  transform: translateY(-12px); /* Lift effect */
+}
+
+.disease-card:hover::before {
+  opacity: 1; /* Reveals the moving frame on hover */
+  animation: rotate-angle 3s linear infinite; /* Starts the "snake" movement */
+}
+
+/* --- Card Content Styling --- */
+.disease-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #008080; /* Corporate Teal */
+  margin-bottom: 15px;
+  line-height: 1.4;
+  min-height: 45px;
+}
+
+.disease-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* --- Button Styling --- */
+.learn-more-btn {
+  background: #263238; /* Dark Graphite */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 2; /* Keeps button clickable above the pseudo-elements */
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #00c4c4; /* Switches to Teal on hover */
+}
+
+/* --- Responsive Grid Layout --- */
+.diseases-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns as seen in Figma */
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Tablet and Mobile adjustments */
+@media (max-width: 1200px) { .diseases-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .diseases-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { 
+  .diseases-grid { grid-template-columns: 1fr; }
+  .diseases-main { padding-top: 90px; }
+}

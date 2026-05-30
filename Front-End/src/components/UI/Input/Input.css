@@ -1,0 +1,37 @@
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px; 
+}
+
+.custom-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #f8fafc;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding-right: 45px;
+}
+
+.has-left-icon {
+  padding-left: 45px !important;
+}
+
+.input-icon-left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.input-icon-right {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  cursor: pointer;
+}
