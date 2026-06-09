@@ -7,6 +7,8 @@ import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import Diseases from './pages/DiseasesPage';
 import SimulationPage from './pages/SimulationPage'; 
+import SimulationModePage from "./pages/SimulationModePage";
+import SimulationExperiencePage from "./pages/SimulationExperiencePage";
 import ChatbotPage from './pages/ChatbotPage';
 import DiseaseDetailsPage from './features/diseases/pages/DiseaseDetailsPage';
 import ScrollToTop from './components/ScrollToTop';
@@ -32,6 +34,12 @@ function App() {
           } />
           <Route path="/simulation" element={
             <ProtectedRoute><SimulationPage /></ProtectedRoute>
+          } />
+          <Route path="/simulation/mode" element={
+            <ProtectedRoute><SimulationModePage /></ProtectedRoute>
+          } />
+          <Route path="/simulation/experience" element={
+            <ProtectedRoute><SimulationExperiencePage /></ProtectedRoute>
           } />
           <Route path="/chatbot" element={
             <ProtectedRoute><ChatbotPage /></ProtectedRoute>

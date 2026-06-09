@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SimulationCard from './components/SimulationCard';
 import './simulation.css';
 
@@ -17,6 +18,7 @@ import TraumaticCataract from '../../assets/eye photos/TraumaticCataract.png';
 import PosteriorSubcapsularCataract from '../../assets/eye photos/PosteriorSubcapsularCataract.png';
 
 const SimulationView = () => {
+    const navigate = useNavigate();
     const simulationData = [
         { id: 1, image: AMD, title: 'Age-Related Macular Degeneration (AMD)' },
         { id: 2, image: MacularPucker, title: 'Macular Pucker' },
@@ -40,6 +42,14 @@ const SimulationView = () => {
 
     const handleNext = () => {
         setActiveIndex((prev) => (prev === simulationData.length - 1 ? 0 : prev + 1));
+    };
+
+    const handleGetStarted = () => {
+        navigate('/simulation/mode', {
+            state: {
+                disease: simulationData[activeIndex]
+            }
+        });
     };
 
     return (
@@ -102,7 +112,7 @@ const SimulationView = () => {
 
             {/* Action Call to Action */}
             <div className="simulation-action-wrapper">
-                <button className="simulation-btn">
+                <button className="simulation-btn" onClick={handleGetStarted}>
                     Get Started
                 </button>
             </div>
