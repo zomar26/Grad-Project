@@ -1,0 +1,181 @@
+.mode-page {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mode-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.707);
+  backdrop-filter: blur(6px);
+}
+
+.mode-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.back-btn {
+  position: fixed;
+  top: 25px;
+  left: 35px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 35px;
+  font-weight: 350;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.mode-title {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+.mode-options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+
+.mode-card {
+  width: 320px;
+  min-height: 340px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mode-card:hover {
+  transform: translateY(-8px);
+}
+
+.mode-icon {
+  width: 240px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+}
+
+.mode-select-btn {
+  margin-top: auto;
+  width: 275px;
+  height: 62px;
+  background: rgba(40, 40, 40, 0.8);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.mode-card:hover .mode-select-btn {
+  background: rgba(0, 150, 150, 0.9);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .mode-title {
+    font-size: 48px;
+  }
+
+  .mode-options {
+    gap: 70px;
+  }
+
+  .mode-card {
+    width: 260px;
+  }
+
+  .mode-icon {
+    width: 200px;
+    height: 190px;
+  }
+
+  .mode-select-btn {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mode-title {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  .mode-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .mode-card {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .mode-icon {
+    width: 180px;
+    height: 160px;
+  }
+
+  .mode-select-btn {
+    width: 220px;
+    height: 55px;
+  }
+
+  .back-btn {
+    top: 15px;
+    left: 15px;
+    font-size: 34px;
+  }
+}
