@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjectGrad API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82cc6443703ef538588c9aed328ee0ea16cb8d05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ea812030fb44390100a71ccb21e67d42c430537")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjectGrad API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjectGrad API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

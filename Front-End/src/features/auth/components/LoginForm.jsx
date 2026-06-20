@@ -24,6 +24,22 @@ const LoginForm = () => {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     setError('');
+
+    if (!navigator.onLine) {
+      setError("No internet connection.");
+      return;
+    }
+
+    if (!credentials.email.trim()) {
+      setError("Email is required.");
+      return;
+    }
+
+    if (!credentials.password.trim()) {
+      setError("Password is required.");
+      return;
+    }
+  
     setLoading(true);
 
     try {
@@ -32,6 +48,8 @@ const LoginForm = () => {
       if (response.token) {
         login(response.token); // Save token via AuthContext
         navigate(from, { replace: true });
+      } else {
+        setError("Login failed.");
       }
     } catch (err) {
       setError(err.message || 'Invalid email or password. Please try again.');

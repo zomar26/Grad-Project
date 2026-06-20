@@ -1,6 +1,7 @@
 export function loadModels({
   scene,
   modelCache,
+  gameMode,
   extinguisherRef,
   clockRef,
   exitSignRef,
@@ -19,6 +20,7 @@ export function loadModels({
   });
 
   scene.add(hallway);
+  if (!gameMode) return;
 
   // Fire Extinguisher
   const extinguisher =

@@ -20,6 +20,7 @@ export function initializeAssessment({
   }
 
   if (setTask) {
-    setTask("Locate the Exit Sign");
+    setTask(
+  "Assessment started. Locate the Exit Sign");
   }
 }

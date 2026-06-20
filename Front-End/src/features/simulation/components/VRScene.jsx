@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import React, { useState } from "react";
 import * as THREE from "three";
+import {saveVRSession} from "../services/vrService";
 import { modelCache, preloadModels, modelsReady } from "./modelCache";
 import { loadModels } from "./loaders/loadModels";
 import { createScene } from "./core/createScene.js";
@@ -105,7 +106,7 @@ export default function VRScene({
 
     const cleanupKeyboard = setupKeyboard(keysRef);
     
-    loadModels({scene, modelCache, extinguisherRef, clockRef, exitSignRef, roomNumberRef});
+    loadModels({scene, modelCache, gameMode, extinguisherRef, clockRef, exitSignRef, roomNumberRef});
 
     setLoading(false);
     
@@ -172,6 +173,10 @@ export default function VRScene({
   applySeverity({severity, amdPassRef, puckerPassRef, myopiaPassRef, nuclearPassRef,
     traumaticPassRef, posteriorPassRef, rpPassRef, stargardtPassRef, choroideremiaPassRef,
     cscrPassRef, hypertensivePassRef, corticalPassRef});
+
+  saveVRSession(disease, Math.round(severity * 100)).then(() =>{
+    console.log("VR Session Saved");}).catch(error =>{
+      console.error(error);});
 
   }, [severity, enabled, disease]);
 

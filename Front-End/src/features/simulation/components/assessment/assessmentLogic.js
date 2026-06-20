@@ -19,7 +19,7 @@ export function assessmentLogic({
       taskRef.current = 1;
 
       if (setTask) {
-        setTask("Locate the Fire Extinguisher");
+        setTask("Find the Fire Extinguisher");
       }
     }
   }
@@ -31,7 +31,7 @@ export function assessmentLogic({
       taskRef.current = 2;
 
       if (setTask) {
-        setTask("Locate the Wall Clock");
+        setTask("Check the Wall Clock");
       }
     }
   }
@@ -59,7 +59,7 @@ export function assessmentLogic({
       completedRef.current = true;
 
       if (setTask) {
-        setTask("Answer the Room Number Question");  
+        setTask("You have completed the assessment. Now please answer the Room Number Question");  
       }
 
       if (setShowQuestion) {
