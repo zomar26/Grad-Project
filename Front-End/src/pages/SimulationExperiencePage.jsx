@@ -22,11 +22,38 @@ export default function SimulationExperiencePage() {
 
   setTaskChanged(true);
 
+  switch (task) {
+
+  case "Assessment started. Locate the Exit Sign":
+    playAudio("ExitSign.mp3");
+    break;
+
+  case "Find the Fire Extinguisher":
+    playAudio("FireExtinguisher.mp3");
+    break;
+
+  case "Check the Wall Clock":
+    playAudio("WallClock.mp3");
+    break;
+
+  case "Read the Room Number":
+    playAudio("RoomNumber.mp3");
+    break;
+
+  case "You have completed the assessment. Now please answer the Room Number Question":
+    playAudio("Completed.mp3");
+    break;
+
+  default:
+    break;
+}
+
   const timer = setTimeout(() => {
     setTaskChanged(false);
   }, 1000);
 
   return () => clearTimeout(timer);
+
 }, [task]);
 
   const diseaseMap = {
@@ -45,6 +72,10 @@ export default function SimulationExperiencePage() {
   };
 
   const selectedDisease = diseaseMap[disease?.title];
+  const playAudio = (fileName) => {
+  const audio = new Audio(`/audio/${fileName}`);
+  audio.play().catch(console.error);
+};
 
   return (
   <>
@@ -155,8 +186,10 @@ export default function SimulationExperiencePage() {
       }}
       onClick={() => {
         if (selectedAnswer === "H8") {
+          playAudio("CorrectAnswer.mp3");
           setAssessmentResult(`✓ Correct Answer - Time: ${elapsedTime.toFixed(1)}s`);
         } else {
+          playAudio("IncorrectAnswer.mp3");
           setAssessmentResult( `✗ Incorrect Answer - Time: ${elapsedTime.toFixed(1)}s`); 
         }
         setShowQuestion(false);

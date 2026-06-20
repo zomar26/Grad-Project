@@ -5,10 +5,15 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
+using ProjectGrad_API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<VectorSearchService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -53,11 +58,24 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowViteApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy.WithOrigins(
+            "http://localhost:3000",
+            "http://localhost:5173"
+        )
+        .AllowAnyHeader()
+        .AllowAnyMethod();
     });
 });
+
+builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<RagService>();
+builder.Services.AddScoped<EmbeddingService>();
+builder.Services.AddScoped<ChatbotService>();
+builder.Services.AddSingleton<PromptInjectionService>();
+builder.Services.AddSingleton<TopicValidationService>();
+builder.Services.AddSingleton<DiseaseKnowledgeService>();
+builder.Services.AddSingleton<ConversationValidationService>();
 
 var app = builder.Build();
 
