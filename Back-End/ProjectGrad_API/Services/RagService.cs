@@ -45,7 +45,7 @@ namespace ProjectGrad_API.Services
             question.Contains("age-related macular degeneration"))
                 return "amd";
 
-            if (question.Contains("myopia") ||
+            if (question.Contains("myopia") || question.Contains("pathologic") ||
             question.Contains("Pathologic Myopia"))
                 return "myopia";
 
@@ -60,25 +60,25 @@ namespace ProjectGrad_API.Services
             question.Contains("hypertensive retinopathy,"))
                 return "hypertensive";
 
-            if (question.Contains("nuclear cataract"))
+            if (question.Contains("nuclear cataract") || question.Contains("nuclear"))
                 return "nuclear_cataract";
 
-            if (question.Contains("posterior cataract") ||
+            if (question.Contains("posterior cataract") || question.Contains("posterior") ||
             question.Contains("posterior subcapsular cataract"))
                 return "posterior_cataract";
 
-            if (question.Contains("cortical cataract"))
+            if (question.Contains("cortical cataract") || question.Contains("cortical"))
                 return "cortical_cataract";
 
-            if (question.Contains("traumatic cataract"))
+            if (question.Contains("traumatic cataract" ) || question.Contains("traumatic"))
                 return "traumatic_cataract";
 
-            if (question.Contains("pucker") ||
+            if (question.Contains("pucker") || question.Contains("macular") ||
             question.Contains("macular pucker") ||
             question.Contains("epiretinal membrane"))
                 return "pucker";
 
-            if (question.Contains("retinitis pigmentosa") ||
+            if (question.Contains("retinitis pigmentosa") || question.Contains("pigmentosa") ||
                 question.Contains("rp"))
                 return "rp";
 

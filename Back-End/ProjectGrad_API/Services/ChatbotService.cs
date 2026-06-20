@@ -98,6 +98,21 @@ namespace ProjectGrad_API.Services
         int? conversationId)
         {
             var q = question.ToLower();
+            if (q.Contains("what diseases do you support") ||
+                q.Contains("supported diseases") ||
+                q.Contains("list diseases"))
+            {
+                var diseases = _knowledgeService.GetAll().Select(d => d.Name);
+
+                var answer = "I currently support:\n\n" + string.Join("\n", diseases);
+
+                return await SaveAndReturn(
+                    userId,
+                    conversationId,
+                    question,
+                    answer
+                );
+            }
             bool isOphthalmology = _conversationValidationService.IsOphthalmologyQuestion(question);
 
             bool isFollowUp = _conversationValidationService.IsFollowUpQuestion(question);
@@ -141,22 +156,6 @@ namespace ProjectGrad_API.Services
                 q = question.ToLower();
             }
 
-            if (q.Contains("what diseases do you support") ||
-                q.Contains("supported diseases") ||
-                q.Contains("list diseases"))
-            {
-                var diseases = _knowledgeService.GetAll().Select(d => d.Name);
-
-                var answer = "I currently support:\n\n" + string.Join("\n", diseases);
-
-                return await SaveAndReturn(
-                    userId,
-                    conversationId,
-                    question,
-                    answer
-                );
-            }
-
             foreach (var diseaseName in _knowledgeService.GetAll().Select(d => d.Name))
             {
                 if (q.Contains(diseaseName.ToLower()))
@@ -165,6 +164,22 @@ namespace ProjectGrad_API.Services
                     break;
                 }
             }
+
+            if (q.Contains("hypertensive")){
+                question = "hypertensive";
+                }
+            
+            if (q.Contains("cortical") && !q.Contains("cataract")){
+                question = "cortical cataract";
+                }
+
+            if (q.Contains("traumatic") && !q.Contains("cataract")){
+                question = "traumatic cataract";
+                }
+
+            if (q.Contains("pigmentosa") && !q.Contains("retinitis")){
+                question = "retinitis pigmentosa";
+                }
 
             var context = await _vectorSearchService.SearchAsync(question);
 

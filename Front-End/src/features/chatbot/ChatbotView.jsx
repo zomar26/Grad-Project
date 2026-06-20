@@ -448,9 +448,9 @@ const ChatbotView = () => {
                 </button>
                 <button
                   className="suggestion-card"
-                  onClick={() => setInputValue("Tell me about Glaucoma")}
+                  onClick={() => setInputValue("Tell me about CSCR")}
                 >
-                  Glaucoma
+                  CSCR
                 </button>
                 <button
                   className="suggestion-card"
