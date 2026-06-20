@@ -78,8 +78,6 @@ def search(query,top_k=3):
             )
         )
     
-    results = [r for r in results if r["distance"] < 1.0]
-    
     if not results:
         return []
 
